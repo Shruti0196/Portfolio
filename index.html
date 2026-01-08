@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Prasad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="particle-canvas"></canvas>
+        <div class="hero-skills-collage">
+            <span class="skill-name skill-large">React</span>
+            <span class="skill-name skill-medium">JavaScript</span>
+            <span class="skill-name skill-small">TypeScript</span>
+            <span class="skill-name skill-large">Angular</span>
+            <span class="skill-name skill-medium">Node.js</span>
+            <span class="skill-name skill-small">HTML</span>
+            <span class="skill-name skill-medium">CSS</span>
+            <span class="skill-name skill-large">Python</span>
+            <span class="skill-name skill-small">MySQL</span>
+            <span class="skill-name skill-medium">Git</span>
+            <span class="skill-name skill-small">REST API</span>
+            <span class="skill-name skill-medium">Django</span>
+            <span class="skill-name skill-small">RxJS</span>
+            <span class="skill-name skill-small">Express</span>
+            <span class="skill-name skill-large">TypeScript</span>
+            <span class="skill-name skill-medium">Jest</span>
+            <span class="skill-name skill-small">Cypress</span>
+        </div>
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hi, my name is</p>
+                    <h1 class="hero-name">
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Software Developer</h2>
+                    <p class="hero-description">
+                        A passionate Software Developer specializing in front-end development, 
+                        creating intuitive user interfaces and seamless experiences.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary" id="resume-download" onclick="downloadResume(event)">
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </a>
+                        <div class="hero-social-inline">
+                            <a href="https://github.com" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:shrutiap2003@gmail.com" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="hero-right">
+                <div class="hero-visual">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:shrutiap2003@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div> -->
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                About Me
+            </h2>
+            <div class="about-layout">
+                <div class="about-main">
+                    <div class="about-content-wrapper">
+                        <div class="about-image-wrapper">
+                            <img src="about_me.png" alt="Shruti Prasad" class="about-image">
+                        </div>
+                        <div class="about-text-wrapper">
+                            <div class="about-text">
+                                <p>
+                                    Hello! I'm Shruti, a software developer based in Mumbai, India. I enjoy creating 
+                                    things that live on the internet, whether that be websites, applications, or anything in between.
+                                </p>
+                                <p>
+                                    My goal is to always build products that provide pixel-perfect, performant experiences.
+                                    I specialize in building exceptional digital experiences using modern web technologies.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="about-tech">
+                    <h3 class="tech-title">Technologies I work with:</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="fab fa-js"></i>
+                            <span>TypeScript & JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-angular"></i>
+                            <span>Angular & React</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-node"></i>
+                            <span>Node.js & Django</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL & DBMS</span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+ <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">
+                Skills & Technologies
+            </h2>
+            
+            <div class="skills-cloud">
+                <span class="skill-tag skill-tag-primary">TypeScript</span>
+                <span class="skill-tag skill-tag-primary">JavaScript</span>
+                <span class="skill-tag skill-tag-primary">Python</span>
+                <span class="skill-tag skill-tag-primary">Angular</span>
+                <span class="skill-tag skill-tag-primary">React</span>
+                <span class="skill-tag skill-tag-primary">Node.js</span>
+                <span class="skill-tag skill-tag-secondary">Django</span>
+                <span class="skill-tag skill-tag-secondary">MySQL</span>
+                <span class="skill-tag skill-tag-secondary">Git</span>
+                <span class="skill-tag skill-tag-secondary">HTML/CSS</span>
+                <span class="skill-tag skill-tag-tertiary">Angular Material</span>
+                <span class="skill-tag skill-tag-tertiary">Bootstrap</span>
+                <span class="skill-tag skill-tag-tertiary">RxJS</span>
+                <span class="skill-tag skill-tag-tertiary">WebSockets</span>
+                <span class="skill-tag skill-tag-tertiary">Cypress</span>
+                <span class="skill-tag skill-tag-tertiary">Jest</span>
+                <span class="skill-tag skill-tag-tertiary">TDD/BDD</span>
+                <span class="skill-tag skill-tag-tertiary">OOP</span>
+                <span class="skill-tag skill-tag-tertiary">DSA</span>
+                <span class="skill-tag skill-tag-tertiary">Agile</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">
+                Where I've Worked
+            </h2>
+            <div class="career-timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-node">
+                    <div class="node-logo">
+                        <div class="logo-placeholder">TH</div>
+                    </div>
+                    <div class="node-content">
+                        <div class="node-header">
+                            <div class="node-title-group">
+                                <h3 class="node-role">Software Developer</h3>
+                                <span class="node-company">@ Tender HealthTech LLP</span>
+                            </div>
+                            <span class="node-period">Sept 2025 - Present</span>
+                        </div>
+                        <div class="node-card">
+                            <p class="node-summary">Designed and implemented an Angular-based Dashboard Designer application with custom chart calculations and interactive filtration.</p>
+                            <div class="node-full-details">
+                                <ul class="job-duties">
+                                    <li>Designed and implemented an Angular-based Dashboard Designer application.</li>
+                                    <li>Designed charts using custom calculations (Measures) and based on data-driven and user-defined classes.</li>
+                                    <li>Implemented chart click-based filtration for user interactivity.</li>
+                                    <li>Created Node-based backend and MySQL database for saving dashboards.</li>
+                                </ul>
+                            </div>
+                            <button class="expand-btn" aria-label="Toggle details">
+                                <span class="expand-text">View Details</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="node-marker"></div>
+                </div>
+
+                <div class="timeline-node">
+                    <div class="node-logo">
+                        <div class="logo-placeholder">RC</div>
+                    </div>
+                    <div class="node-content">
+                        <div class="node-header">
+                            <div class="node-title-group">
+                                <h3 class="node-role">Software Developer</h3>
+                                <span class="node-company">@ Raychem (Chemelex)</span>
+                            </div>
+                            <span class="node-period">July 2024 - March 2025</span>
+                        </div>
+                        <div class="node-card">
+                            <p class="node-summary">Built advanced UIs for 100+ designers, increased test coverage to 90%+, and migrated to modern testing frameworks reducing test files by 50%.</p>
+                            <div class="node-full-details">
+                                <ul class="job-duties">
+                                    <li>Designed and built advanced UIs including nested tree structures, adhering to UX best practices to improve usability for 100+ designers.</li>
+                                    <li>Implemented reactive programming patterns using RxJS for asynchronous operations and event handling.</li>
+                                    <li>Adhered to Test-Driven Development (TDD) and Behavior-Driven Development (BDD) methodologies.</li>
+                                    <li>Migrated unit tests from Jasmine to Jest, increasing code coverage to more than 90%.</li>
+                                    <li>Migrated functional tests to Cypress, cutting test files by 50% and improving edge case coverage.</li>
+                                    <li>Mentored junior developer and did code reviews as part of the Buddy Program.</li>
+                                </ul>
+                            </div>
+                            <button class="expand-btn" aria-label="Toggle details">
+                                <span class="expand-text">View Details</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="node-marker"></div>
+                </div>
+
+                <div class="timeline-node">
+                    <div class="node-logo">
+                        <div class="logo-placeholder">PT</div>
+                    </div>
+                    <div class="node-content">
+                        <div class="node-header">
+                            <div class="node-title-group">
+                                <h3 class="node-role">Django Developer Intern</h3>
+                                <span class="node-company">@ Protrainy</span>
+                            </div>
+                            <span class="node-period">April 2022 - July 2022</span>
+                        </div>
+                        <div class="node-card">
+                            <p class="node-summary">Developed backend APIs and database models for a Student Learning Management System using Django Rest Framework.</p>
+                            <div class="node-full-details">
+                                <ul class="job-duties">
+                                    <li>Worked on Backend development and created database models for Student Learning Management System.</li>
+                                    <li>Created backend APIs for CRUD operations and other features using Django Rest Framework.</li>
+                                </ul>
+                            </div>
+                            <button class="expand-btn" aria-label="Toggle details">
+                                <span class="expand-text">View Details</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="node-marker"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                Some Things I've Built
+            </h2>
+            <div class="projects-masonry">
+                <!-- Project 1: Roofix -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Roofix</h3>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" aria-label="External Link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <p class="project-summary">
+                                A full stack real estate platform where users can browse, filter and favorite 
+                                rental and sale properties.
+                            </p>
+                            <p class="project-full">
+                                A full stack real estate platform where users can browse, filter and favorite 
+                                rental and sale properties. Features dynamic UI with hierarchical, reusable components 
+                                and state management using React Hooks.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <ul class="project-tech">
+                                <li>ReactJs</li>
+                                <li>Django REST Framework</li>
+                                <li>Django Channels</li>
+                                <li>WebSockets</li>
+                                <li>Material UI</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Audio Insight -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Audio Insight</h3>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" aria-label="External Link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <p class="project-summary">
+                                A Python tool for instrument classification, segmentation, and audio visualization.
+                            </p>
+                            <p class="project-full">
+                                A Python tool for instrument classification, segmentation, and audio visualization. 
+                                Implements CNN model for classification with 86.2% accuracy. Generated classification 
+                                models like Logistic Regression, Naive Bayes Classifier and others.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <ul class="project-tech">
+                                <li>Python</li>
+                                <li>Supervised Learning</li>
+                                <li>Deep Learning</li>
+                                <li>CNN</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">
+                Education
+            </h2>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="degree-title">Bachelor of Technology: Computer Engineering</h3>
+                        <p class="institution">Dwarkadas Jivanlal Sanghvi College of Engineering, Mumbai</p>
+                        <p class="degree-info">
+                            <span class="cgpa">CGPA: 9.5/10</span>
+                            <span class="period">2020 - 2024</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="degree-title">MHT-CET</h3>
+                        <p class="degree-info">
+                            <span class="cgpa">99.6 percentile</span>
+                            <span class="period">2020</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-split">
+            <div class="contact-left">
+                <h2 class="section-title">
+                    Get In Touch
+                </h2>
+                <p class="contact-description">
+                    I'm currently looking for new opportunities, my inbox is always open. 
+                    Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:shrutiap2003@gmail.com">shrutiap2003@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:+917977122730">+91 7977122730</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-right">
+                <div class="contact-card">
+                    <h3>Let's Connect!</h3>
+                    <p>Feel free to reach out for collaborations, opportunities, or just to say hello.</p>
+                    <a href="mailto:shrutiap2003@gmail.com" class="btn btn-primary btn-large">Send Message</a>
+                    <div class="contact-social">
+                        <a href="https://github.com" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:shrutiap2003@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & Built by Shruti Prasad</p>
+            <p class="footer-year">&copy; <span id="current-year"></span> All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Local Resume Download Handler
+        // The resume file should be in the same folder as index.html
+        
+        function downloadResume(event) {
+            event.preventDefault();
+            
+            // Local file path (relative to index.html)
+            const resumePath = 'Shruti Prasad Resume.pdf';
+            const resumeFilename = 'Shruti Prasad Resume.pdf';
+            
+            // Create a temporary anchor element to trigger download
+            const link = document.createElement('a');
+            link.href = resumePath;
+            link.download = resumeFilename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>
+
