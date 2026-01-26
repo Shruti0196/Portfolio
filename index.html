@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,12 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
@@ -21,6 +25,7 @@
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#education" class="nav-link">Education</a></li>
+                <!-- <li><a href="#responsibilities" class="nav-link">Leadership</a></li> -->
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -62,20 +67,25 @@
                         <span class="cursor">|</span>
                     </h1>
                     <h2 class="hero-subtitle">Software Developer</h2>
+                    <div class="opportunity-badge">
+                        <i class="fas fa-star"></i>
+                        <span><strong>Immediate Joiner</strong> - Actively Looking for New Opportunities</span>
+                    </div>
                     <p class="hero-description">
-                        A passionate Software Developer specializing in front-end development, 
-                        creating intuitive user interfaces and seamless experiences.
+                        Passionate about coding and building solutions that make a difference in the real world.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#" class="btn btn-primary" id="resume-download" onclick="downloadResume(event)">
+                        <a href="Shruti Prasad Resume.pdf" class="btn btn-primary" id="resume-download" target="_blank"
+                            download>
                             <i class="fas fa-download"></i>
                             Download Resume
                         </a>
                         <div class="hero-social-inline">
-                            <a href="https://github.com" target="_blank" aria-label="GitHub">
+                            <a href="https://github.com/Shruti0196" target="_blank" aria-label="GitHub">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                            <a href="https://www.linkedin.com/in/shruti-prasad-859b45208/" target="_blank"
+                                aria-label="LinkedIn">
                                 <i class="fab fa-linkedin"></i>
                             </a>
                             <a href="mailto:shrutiap2003@gmail.com" aria-label="Email">
@@ -127,17 +137,36 @@
                 <div class="about-main">
                     <div class="about-content-wrapper">
                         <div class="about-image-wrapper">
-                            <img src="about_me.png" alt="Shruti Prasad" class="about-image">
+                            <img src="assets/about_me.png" alt="Shruti Prasad" class="about-image">
                         </div>
                         <div class="about-text-wrapper">
                             <div class="about-text">
                                 <p>
-                                    Hello! I'm Shruti, a software developer based in Mumbai, India. I enjoy creating 
-                                    things that live on the internet, whether that be websites, applications, or anything in between.
+                                    I'm a <b>Software Developer</b> with <b>1+ year of professional experience</b>,
+                                    working across <b>frontend and backend</b> systems. My core expertise is in
+                                    <b>Angular, RxJS, React, and Django</b>, with a focus on building scalable,
+                                    data-driven web applications.
                                 </p>
                                 <p>
-                                    My goal is to always build products that provide pixel-perfect, performant experiences.
-                                    I specialize in building exceptional digital experiences using modern web technologies.
+                                    On the <b>frontend</b>, I've worked extensively with <b>Angular and React</b>, using
+                                    <b>RxJS</b> for <b>reactive programming, hooks, reusable component patterns</b>,
+                                    lazy loading, and complex UIs such as deeply <b>nested tree structures</b> and
+                                    multi-parameter filtering. I've also built real life solutions such as <b>dashboard
+                                        and analytics systems</b>, including <b>no-code configuration-driven UIs</b>,
+                                    custom calculated measures, interactive charts, embeddable dashboards, and
+                                    <b>workflow-based interfaces using JointJS</b>.
+                                </p>
+                                <p>
+                                    On the <b>backend</b>, I've built REST APIs using <b>Django REST Framework</b>,
+                                    implemented <b>JWT-based authentication</b>, added real-time features using
+                                    <b>Django Channels and WebSockets</b>, and worked with <b>SQL databases</b>.
+                                </p>
+                                <p>
+                                    I follow <b>Test driven development(TDD)</b> and <b>Behaviour driven
+                                        development(BDD)</b> practices, have experience with <b>Jest and Cypress</b>,
+                                    and focus on writing clean, maintainable, and well-tested production code. I also
+                                    have a strong command of <b>JavaScript, TypeScript</b>, and <b>Data Structures &
+                                        Algorithms (250+ problems solved)</b>.
                                 </p>
                             </div>
                         </div>
@@ -167,34 +196,36 @@
             </div>
         </div>
     </section>
- <!-- Skills Section -->
+    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title">
                 Skills & Technologies
             </h2>
-            
+
             <div class="skills-cloud">
-                <span class="skill-tag skill-tag-primary">TypeScript</span>
+                <span class="skill-tag skill-tag-primary">C++</span>
                 <span class="skill-tag skill-tag-primary">JavaScript</span>
+                <span class="skill-tag skill-tag-primary">TypeScript</span>
                 <span class="skill-tag skill-tag-primary">Python</span>
-                <span class="skill-tag skill-tag-primary">Angular</span>
-                <span class="skill-tag skill-tag-primary">React</span>
-                <span class="skill-tag skill-tag-primary">Node.js</span>
-                <span class="skill-tag skill-tag-secondary">Django</span>
+                <span class="skill-tag skill-tag-primary">HTML</span>
+                <span class="skill-tag skill-tag-primary">CSS</span>
+                <span class="skill-tag skill-tag-secondary">Angular</span>
+                <span class="skill-tag skill-tag-secondary">React</span>
+                <span class="skill-tag skill-tag-secondary">Django Rest Framework</span>
                 <span class="skill-tag skill-tag-secondary">MySQL</span>
                 <span class="skill-tag skill-tag-secondary">Git</span>
-                <span class="skill-tag skill-tag-secondary">HTML/CSS</span>
-                <span class="skill-tag skill-tag-tertiary">Angular Material</span>
-                <span class="skill-tag skill-tag-tertiary">Bootstrap</span>
+                <span class="skill-tag skill-tag-secondary">Cypress</span>
+                <span class="skill-tag skill-tag-secondary">Jest</span>
+                <span class="skill-tag skill-tag-secondary">Angular Material</span>
+                <span class="skill-tag skill-tag-secondary">Bootstrap</span>
+                <span class="skill-tag skill-tag-tertiary">Object-Oriented Programming</span>
+                <span class="skill-tag skill-tag-tertiary">Data Structures & Algorithms</span>
+                <span class="skill-tag skill-tag-tertiary">Database Management System</span>
                 <span class="skill-tag skill-tag-tertiary">RxJS</span>
                 <span class="skill-tag skill-tag-tertiary">WebSockets</span>
-                <span class="skill-tag skill-tag-tertiary">Cypress</span>
-                <span class="skill-tag skill-tag-tertiary">Jest</span>
                 <span class="skill-tag skill-tag-tertiary">TDD/BDD</span>
-                <span class="skill-tag skill-tag-tertiary">OOP</span>
-                <span class="skill-tag skill-tag-tertiary">DSA</span>
-                <span class="skill-tag skill-tag-tertiary">Agile</span>
+                <span class="skill-tag skill-tag-tertiary">Agile Methodology</span>
             </div>
         </div>
     </section>
@@ -207,27 +238,51 @@
             </h2>
             <div class="career-timeline">
                 <div class="timeline-line"></div>
-                
+
                 <div class="timeline-node">
                     <div class="node-logo">
-                        <div class="logo-placeholder">TH</div>
+                        <img src="assets/THT-logo.jpg" alt="Tender HealthTech" class="company-logo">
                     </div>
                     <div class="node-content">
                         <div class="node-header">
                             <div class="node-title-group">
                                 <h3 class="node-role">Software Developer</h3>
-                                <span class="node-company">@ Tender HealthTech LLP</span>
+                                <div class="node-tech-stack">
+                                    <span class="tech-chip">Angular</span>
+                                    <span class="tech-chip">Node</span>
+                                    <span class="tech-chip">MySQL</span>
+                                </div>
+                                <span class="node-company">@ Tender HealthTech LLP (USV Pvt. Ltd.)</span>
                             </div>
                             <span class="node-period">Sept 2025 - Present</span>
                         </div>
                         <div class="node-card">
-                            <p class="node-summary">Designed and implemented an Angular-based Dashboard Designer application with custom chart calculations and interactive filtration.</p>
+                            <p class="node-summary">Developed a <b>no-code Dashboard Designer</b> enabling <b>database
+                                    connectivity, data joins, filtering, and transformation</b> for analytics use cases.
+                                Built support for <b>custom calculated measures</b>, reusable chart components, and
+                                <b>interactive filtering with drill-down</b> for cross-dashboard insights.
+                                Designed <b>embeddable dashboards</b> for seamless integration into external
+                                applications, reducing dashboard creation time by 90%.
+                                Contributed to a <b>Patient Support Program (PSP)</b> platform by building multi-role
+                                dashboards, patient onboarding, tracking, and workflow management.</p>
                             <div class="node-full-details">
                                 <ul class="job-duties">
-                                    <li>Designed and implemented an Angular-based Dashboard Designer application.</li>
-                                    <li>Designed charts using custom calculations (Measures) and based on data-driven and user-defined classes.</li>
-                                    <li>Implemented chart click-based filtration for user interactivity.</li>
-                                    <li>Created Node-based backend and MySQL database for saving dashboards.</li>
+                                    <li>Developed a <b>Dashboard Designer</b> enabling users to connect databases, join
+                                        data, apply filters, and perform <b>data modeling and transformation
+                                            features</b>.</li>
+                                    <li>Built support for <b>custom calculated measures</b> to enable formula-based
+                                        metrics beyond basic math operations.</li>
+                                    <li>Designed <b>data-driven custom chart categorical classes</b> for flexible and
+                                        reusable visualization components.</li>
+                                    <li>Enabled <b>interactive chart filtering and drill-down</b>, allowing cross-chart
+                                        analysis and deeper insights.</li>
+                                    <li>Created an <b>embeddable dashboard framework</b> for seamless integration into
+                                        external applications.</li>
+                                    <li>Reduced dashboard creation time by <b>90%</b> by introducing a code-free,
+                                        self-service dashboard builder.</li>
+                                    <li>Worked on a <b>Patient Support Program (PSP)</b> application, developing
+                                        <b>multi-role dashboards, patient onboarding, tracking, program workflow
+                                            management</b>.</li>
                                 </ul>
                             </div>
                             <button class="expand-btn" aria-label="Toggle details">
@@ -241,26 +296,49 @@
 
                 <div class="timeline-node">
                     <div class="node-logo">
-                        <div class="logo-placeholder">RC</div>
+                        <img src="assets/chemelex.jpg" alt="Raychem Chemelex" class="company-logo">
                     </div>
                     <div class="node-content">
                         <div class="node-header">
                             <div class="node-title-group">
                                 <h3 class="node-role">Software Developer</h3>
+                                <div class="node-tech-stack">
+                                    <span class="tech-chip">Angular</span>
+                                    <span class="tech-chip">RxJS</span>
+                                    <span class="tech-chip">JSON API</span>
+                                    <span class="tech-chip">TypeScript</span>
+                                    <span class="tech-chip">Jest</span>
+                                    <span class="tech-chip">Cypress</span>
+                                </div>
                                 <span class="node-company">@ Raychem (Chemelex)</span>
                             </div>
                             <span class="node-period">July 2024 - March 2025</span>
                         </div>
                         <div class="node-card">
-                            <p class="node-summary">Built advanced UIs for 100+ designers, increased test coverage to 90%+, and migrated to modern testing frameworks reducing test files by 50%.</p>
+                            <p class="node-summary">Built advanced <b>Angular</b> UIs with complex <b>nested tree
+                                    structures</b>, following UX best practices to improve usability.
+                                Implemented reactive programming using <b>RxJS</b> and followed <b>TDD/BDD
+                                    practices</b>.
+                                Migrated tests from <b>Jasmine</b> to <b>Jest</b> and <b>Protractor</b> to
+                                <b>Cypress</b>, achieving <b>90%+ test coverage</b>, <b>reducing test size by 50%</b>,
+                                and contributing through Agile ceremonies, code reviews, and junior mentoring.</p>
                             <div class="node-full-details">
                                 <ul class="job-duties">
-                                    <li>Designed and built advanced UIs including nested tree structures, adhering to UX best practices to improve usability for 100+ designers.</li>
-                                    <li>Implemented reactive programming patterns using RxJS for asynchronous operations and event handling.</li>
-                                    <li>Adhered to Test-Driven Development (TDD) and Behavior-Driven Development (BDD) methodologies.</li>
-                                    <li>Migrated unit tests from Jasmine to Jest, increasing code coverage to more than 90%.</li>
-                                    <li>Migrated functional tests to Cypress, cutting test files by 50% and improving edge case coverage.</li>
-                                    <li>Mentored junior developer and did code reviews as part of the Buddy Program.</li>
+                                    <li>Designed and built advanced UIs including <b>nested tree structures</b>,
+                                        adhering to UX best practices to improve usability for 100+ designers.</li>
+                                    <li>Implemented reactive programming patterns using <b>RxJS</b> for <b>asynchronous
+                                            operations</b> and event handling.</li>
+                                    <li>Adhered to <b>Test-Driven Development (TDD)</b> and <b>Behavior-Driven
+                                            Development (BDD)</b> methodologies while implementing <b>best coding
+                                            practices and coding standards</b>.</li>
+                                    <li>Migrated unit tests from <b>Jasmine to Jest</b>, increasing <b>code coverage to
+                                            more than 90%</b>.</li>
+                                    <li>Migrated functional tests to <b>Cypress</b>, <b>cutting test files by 50%</b>
+                                        and improving edge case coverage to reduce production issues.</li>
+                                    <li>Worked within an <b>Agile framework</b> and actively participated in sprint
+                                        demos.</li>
+                                    <li>Mentored junior developer and did <b>code reviews</b> as part of the Buddy
+                                        Program.</li>
                                 </ul>
                             </div>
                             <button class="expand-btn" aria-label="Toggle details">
@@ -274,22 +352,66 @@
 
                 <div class="timeline-node">
                     <div class="node-logo">
-                        <div class="logo-placeholder">PT</div>
+                        <div class="logo-placeholder">AL</div>
+                    </div>
+                    <div class="node-content">
+                        <div class="node-header">
+                            <div class="node-title-group">
+                                <h3 class="node-role">Backend Developer Intern</h3>
+                                <div class="node-tech-stack">
+                                    <span class="tech-chip">Django REST Framework</span>
+                                    <span class="tech-chip">Python</span>
+                                    <span class="tech-chip">MySQL</span>
+                                </div>
+                                <span class="node-company">@ Aharbal</span>
+                            </div>
+                            <span class="node-period">October 2022 - Jan 2023</span>
+                        </div>
+                        <div class="node-card">
+                            <p class="node-summary">Developed backend for a personalized quotes application with REST
+                                APIs and database integration.</p>
+                            <div class="node-full-details">
+                                <ul class="job-duties">
+                                    <li>Worked on the Backend development of personalized quotes application.</li>
+                                    <li>Created the <b>backend APIs</b> and integrated database using <b>Django Rest
+                                            Framework</b> and <b>MySQL</b> respectively.</li>
+                                    <li>Additionally, contributed to the <b>UI/UX design</b> of the application.</li>
+                                </ul>
+                            </div>
+                            <button class="expand-btn" aria-label="Toggle details">
+                                <span class="expand-text">View Details</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="node-marker"></div>
+                </div>
+
+                <div class="timeline-node">
+                    <div class="node-logo">
+                        <img src="assets/protrainy.png" alt="Protrainy" class="company-logo">
                     </div>
                     <div class="node-content">
                         <div class="node-header">
                             <div class="node-title-group">
                                 <h3 class="node-role">Django Developer Intern</h3>
+                                <div class="node-tech-stack">
+                                    <span class="tech-chip">Django REST Framework</span>
+                                    <span class="tech-chip">Python</span>
+                                </div>
                                 <span class="node-company">@ Protrainy</span>
                             </div>
                             <span class="node-period">April 2022 - July 2022</span>
                         </div>
                         <div class="node-card">
-                            <p class="node-summary">Developed backend APIs and database models for a Student Learning Management System using Django Rest Framework.</p>
+                            <p class="node-summary">Developed backend APIs and database models for a Student Learning
+                                Management System using Django Rest Framework.</p>
                             <div class="node-full-details">
                                 <ul class="job-duties">
-                                    <li>Worked on Backend development and created database models for Student Learning Management System.</li>
-                                    <li>Created backend APIs for CRUD operations and other features using Django Rest Framework.</li>
+                                    <li>Worked on Backend development and <b>created database models</b> for Student
+                                        Learning Management System.</li>
+                                    <li>Created <b>backend APIs</b> for <b>CRUD operations</b> and other features for
+                                        application using <b>Django Rest Framework</b>.</li>
                                 </ul>
                             </div>
                             <button class="expand-btn" aria-label="Toggle details">
@@ -317,25 +439,38 @@
                         <div class="project-header">
                             <h3 class="project-title">Roofix</h3>
                             <div class="project-links">
-                                <a href="https://github.com" target="_blank" aria-label="GitHub">
+                                <a href="https://github.com/Shruti0196/estate-agency" target="_blank"
+                                    aria-label="GitHub">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <a href="#" target="_blank" aria-label="External Link">
+                                <!-- <a href="#" target="_blank" aria-label="External Link">
                                     <i class="fas fa-external-link-alt"></i>
-                                </a>
+                                </a> -->
                             </div>
                         </div>
                         <div class="project-description">
                             <p class="project-summary">
-                                A full stack real estate platform where users can browse, filter and favorite 
-                                rental and sale properties.
+                                Developed a <b>full-stack</b> real estate platform enabling users to browse, filter, and
+                                favorite rental and sale properties.
+                                Built a dynamic React UI using <b>reusable components, hooks, lazy loading, and
+                                    multi-parameter filtering</b>.
+                                Implemented secure REST APIs with Django REST Framework, <b>JWT authentication</b>, and
+                                real-time updates using <b>Django Channels</b> and <b>WebSockets</b>.
                             </p>
-                            <p class="project-full">
-                                A full stack real estate platform where users can browse, filter and favorite 
-                                rental and sale properties. Features dynamic UI with hierarchical, reusable components 
-                                and state management using React Hooks.
-                            </p>
+                            <ul class="project-bullets" style="display: none;">
+                                <li>Developed a <b>full stack real estate platform</b> where users can browse, filter,
+                                    and favorite rental and sale properties,
+                                    and created a dynamic UI with <b>hierarchical, reusable components</b> while
+                                    managing state using React Hooks.</li>
+                                <li>Implemented <b>lazy loading, dynamic routing</b> and <b>multi-parameter
+                                        filtering</b> for efficient property search.</li>
+                                <li>Developed APIs using <b>Django REST Framework</b> with <b>JWT authentication</b> for
+                                    property listings, filtering.</li>
+                                <li>Enabled real-time updates of new property listings using <b>WebSockets</b> and
+                                    <b>Django Channels</b>.</li>
+                            </ul>
                         </div>
+                        <button class="view-details-btn">View Details</button>
                         <div class="project-footer">
                             <ul class="project-tech">
                                 <li>ReactJs</li>
@@ -348,36 +483,126 @@
                     </div>
                 </div>
 
-                <!-- Project 2: Audio Insight -->
+                <!-- Project 2: Linguify -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Linguify</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/Shruti0196/Linguify" target="_blank" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <!-- <a href="#" target="_blank" aria-label="External Link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <p class="project-summary">
+                                Developed an <b>English language learning tool</b> featuring pronunciation checking,
+                                translation, chatbot, and grammar correction using Python libraries.
+                                Implemented <b>interactive word games</b>, including a game based on the <b>Minimax
+                                    algorithm</b>, to enhance learning engagement.
+                            </p>
+                            <ul class="project-bullets" style="display: none;">
+                                <li>Developed a tool to learn the <b>English language</b>.</li>
+                                <li>Features such as a <b>pronunciation checker, Language translation, Chatbot, and
+                                        Grammar corrector</b> are executed using <b>Python libraries</b>.</li>
+                                <li>It has a word game implemented using the <b>Minimax algorithm</b> along with other
+                                    games.</li>
+                            </ul>
+                        </div>
+                        <button class="view-details-btn">View Details</button>
+                        <div class="project-footer">
+                            <ul class="project-tech">
+                                <li>Python</li>
+                                <li>Data Structure & Algorithm</li>
+                                <li>Natural Language Processing</li>
+                                <li>Minimax Algorithm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Audio Insight -->
                 <div class="project-card">
                     <div class="project-content">
                         <div class="project-header">
                             <h3 class="project-title">Audio Insight</h3>
                             <div class="project-links">
-                                <a href="https://github.com" target="_blank" aria-label="GitHub">
+                                <a href="https://github.com/Shruti0196/Audio_Instrument_Segmentation" target="_blank"
+                                    aria-label="GitHub">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <a href="#" target="_blank" aria-label="External Link">
+                                <!-- <a href="#" target="_blank" aria-label="External Link">
                                     <i class="fas fa-external-link-alt"></i>
-                                </a>
+                                </a> -->
                             </div>
                         </div>
                         <div class="project-description">
                             <p class="project-summary">
-                                A Python tool for instrument classification, segmentation, and audio visualization.
+                                Developed a <b>Python-based tool</b> for <b>instrument classification and audio
+                                    analysis</b>, supporting <b>audio segmentation and visualization</b>.
+                                Applied machine learning and deep learning techniques to improve classification accuracy
+                                and gain insights from audio data.
                             </p>
-                            <p class="project-full">
-                                A Python tool for instrument classification, segmentation, and audio visualization. 
-                                Implements CNN model for classification with 86.2% accuracy. Generated classification 
-                                models like Logistic Regression, Naive Bayes Classifier and others.
-                            </p>
+                            <ul class="project-bullets" style="display: none;">
+                                <li>Developed a Python tool for <b>instrument classification, segmentation, and audio
+                                        visualization</b>.</li>
+                                <li>The results were generated <b>classification models</b> like Logistic Regression,
+                                    Naive Bayes Classifier and others.</li>
+                                <li>Implements a <b>CNN model</b> for classification with <b>86.2% accuracy</b>.</li>
+                            </ul>
                         </div>
+                        <button class="view-details-btn">View Details</button>
                         <div class="project-footer">
                             <ul class="project-tech">
                                 <li>Python</li>
                                 <li>Supervised Learning</li>
                                 <li>Deep Learning</li>
                                 <li>CNN</li>
+                                <li>Signal Processing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Web Scraper -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Web Scraper</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/Shruti0196/Web-Scraper" target="_blank" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <!-- <a href="#" target="_blank" aria-label="External Link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <p class="project-summary">
+                                Built a Django-based <b>web scraping tool</b> that automates link extraction from
+                                websites using Python libraries, enabling <b>efficient data collection and analysis</b>.
+                            </p>
+                            <ul class="project-bullets" style="display: none;">
+                                <li>Developed a <b>Django-based</b> web application to <b>extract and collect links</b>
+                                    from a given website URL.</li>
+                                <li>Implemented web scraping functionality using Python’s <b>Beautiful Soup</b> library.
+                                </li>
+                                <li>Enabled efficient crawling and structured extraction of website links for further
+                                    processing.</li>
+
+                            </ul>
+                        </div>
+                        <button class="view-details-btn">View Details</button>
+                        <div class="project-footer">
+                            <ul class="project-tech">
+                                <li>Python</li>
+                                <li>Django</li>
+                                <li>Beautiful Soup</li>
+                                <li>Web Scraping</li>
                             </ul>
                         </div>
                     </div>
@@ -386,7 +611,7 @@
         </div>
     </section>
 
-   
+
 
     <!-- Education Section -->
     <section id="education" class="education">
@@ -398,11 +623,22 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3 class="degree-title">Bachelor of Technology: Computer Engineering</h3>
-                        <p class="institution">Dwarkadas Jivanlal Sanghvi College of Engineering, Mumbai</p>
+                        <h3 class="degree-title">School: SSC</h3>
+                        <p class="institution">St. Xavier's High School, Thane</p>
                         <p class="degree-info">
-                            <span class="cgpa">CGPA: 9.5/10</span>
-                            <span class="period">2020 - 2024</span>
+                            <span class="cgpa">92.20%</span>
+                            <span class="period">2018</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="degree-title">High School: Science - HSC</h3>
+                        <p class="institution">Thakur College of Science and Commerce, Mumbai</p>
+                        <p class="degree-info">
+                            <span class="cgpa">86.92%</span>
+                            <span class="period">2019 - 2020</span>
                         </p>
                     </div>
                 </div>
@@ -416,9 +652,50 @@
                         </p>
                     </div>
                 </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="degree-title">Bachelor of Technology: Computer Engineering</h3>
+                        <p class="institution">Dwarkadas Jivanlal Sanghvi College of Engineering, Mumbai</p>
+                        <p class="degree-info">
+                            <span class="cgpa">CGPA: 9.5/10</span>
+                            <span class="period">2020 - 2024</span>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- Position of Responsibility Section -->
+    <!-- <section id="responsibilities" class="responsibilities">
+        <div class="container">
+            <h2 class="section-title">
+                Leadership
+            </h2>
+            <div class="responsibility-grid">
+                <div class="responsibility-card">
+                    <div class="responsibility-header">
+                        <h3 class="responsibility-title">Technical Head at Synapse</h3>
+                        <span class="responsibility-period">August 2022 - August 2023</span>
+                    </div>
+                    <div class="responsibility-content">
+                        <p>Leading the team to create Web development and App development projects for the committee.</p>
+                    </div>
+                </div>
+                
+                <div class="responsibility-card">
+                    <div class="responsibility-header">
+                        <h3 class="responsibility-title">Creative Head at Synapse</h3>
+                        <span class="responsibility-period">August 2022 - August 2023</span>
+                    </div>
+                    <div class="responsibility-content">
+                        <p>Leading the team to work on UI/UX Designing, Soft creatives, and Hard creatives for the Hackathons and other events.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
@@ -428,7 +705,7 @@
                     Get In Touch
                 </h2>
                 <p class="contact-description">
-                    I'm currently looking for new opportunities, my inbox is always open. 
+                    I'm currently looking for new opportunities, my inbox is always open.
                     Whether you have a question or just want to say hi, I'll try my best to get back to you!
                 </p>
                 <div class="contact-info">
@@ -458,10 +735,11 @@
                     <p>Feel free to reach out for collaborations, opportunities, or just to say hello.</p>
                     <a href="mailto:shrutiap2003@gmail.com" class="btn btn-primary btn-large">Send Message</a>
                     <div class="contact-social">
-                        <a href="https://github.com" target="_blank" aria-label="GitHub">
+                        <a href="https://github.com/Shruti0196" target="_blank" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/shruti-prasad-859b45208/" target="_blank"
+                            aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
                         <a href="mailto:shrutiap2003@gmail.com" aria-label="Email">
@@ -482,26 +760,6 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        // Local Resume Download Handler
-        // The resume file should be in the same folder as index.html
-        
-        function downloadResume(event) {
-            event.preventDefault();
-            
-            // Local file path (relative to index.html)
-            const resumePath = 'Shruti Prasad Resume.pdf';
-            const resumeFilename = 'Shruti Prasad Resume.pdf';
-            
-            // Create a temporary anchor element to trigger download
-            const link = document.createElement('a');
-            link.href = resumePath;
-            link.download = resumeFilename;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        }
-    </script>
 </body>
-</html>
 
+</html>

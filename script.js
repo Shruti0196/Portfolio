@@ -312,6 +312,25 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// View Details Button Functionality
+const viewDetailsButtons = document.querySelectorAll('.view-details-btn');
+
+viewDetailsButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        const projectCard = this.closest('.project-card');
+        const isExpanded = projectCard.classList.contains('expanded');
+        
+        if (isExpanded) {
+            projectCard.classList.remove('expanded');
+            this.textContent = 'View Details';
+        } else {
+            projectCard.classList.add('expanded');
+            this.textContent = 'Hide Details';
+        }
+    });
+});
+
 // Initialize on load
 window.addEventListener('load', () => {
     // Trigger initial animations
