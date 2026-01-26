@@ -1070,6 +1070,10 @@ section {
     margin-top: 1.5rem;
 }
 
+.timeline-node.expanded .node-summary{
+    display: none;
+}
+
 .job-duties {
     list-style: none;
     padding: 0;
@@ -2232,7 +2236,8 @@ section {
     }
 
     .project-summary,
-    .project-full {
+    .project-full,
+    .project-bullets {
         font-size: 0.9rem;
     }
 
