@@ -1,4 +1,5 @@
-# Hi there! Welcome to My GitHub Profile 👋 I’m **Shruti Prasad**
+# Hi there! Welcome to My GitHub Profile 👋
+I’m **Shruti Prasad**
 
 💻 **Software Developer | Full-Stack | Problem Solver**
 
@@ -24,7 +25,7 @@ Database Management Systems
 ---
 
 ## 💼 Experience 
-- **1+ years** building and maintaining production-grade applications
+- **1.5 years** building and maintaining production-grade applications
 - Experience across **frontend, backend, and data layers**
 - Strong focus on **clean architecture, performance, and testing**
 - Collaborative work in **Agile environments**
